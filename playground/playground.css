@@ -1,0 +1,280 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #34425c;
+    height: 100%;
+    width: 100%;
+    font: 13px/1.5 Acumin_Regular, Helvetica, Arial, Sans-serif;
+    background-color: rgb(236, 240, 245);
+    *font-size: small;
+    *font: x-small;
+}
+
+textarea {
+    resize: none;
+}
+
+button, input, select, textarea, table, th {
+    font-family: inherit;
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+input[type=radio], input[type=checkbox], input[type=text], textarea, select {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+input[type=text], input[type=password], select {
+    height: 32px;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=password], textarea, select {
+    font-size: 14px;
+    border: 1px solid #DDE0E5;
+    padding: 0 12px;
+    color: #34425C;
+    border-radius: 6px;
+    /*Set min-width to prevent some old style make the input too short*/
+    min-width: 50px;
+    -webkit-transition: all .15s cubic-bezier(.645, .045, .355, 1);
+    transition: all .15s cubic-bezier(.645, .045, .355, 1);
+}
+
+input[type=checkbox][disabled], input[type=text][disabled], input[type=password][disabled], textarea[disabled], select[disabled] {
+    background: #eaeaea;
+    cursor: not-allowed;
+}
+
+input.readonly, input[readonly] {
+    background-color: #f5f5f5;
+}
+
+option[disabled] {
+    background: #f5f5f5;
+}
+
+input[name='pageNumber'] {
+    margin: 0 4px;
+}
+
+textarea {
+    box-sizing: border-box;
+    padding: 10px 12px;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3e49fb;
+}
+
+input.invalid, input.invalid:hover, input.invalid:focus, 
+textarea.invalid, textarea.invalid:hover, textarea.invalid:focus,
+select.invalid, select.invalid:hover, select.invalid:focus
+{
+	border: 1px solid #EF7070;
+ /* border style for select not work in IE6, IE7 */
+	background-color: #FFE1E1;
+}
+
+select.warn {
+    border-color: #f80;
+    color: #f80;
+}
+
+select.error {
+    border-color: #f00;
+    color: #f00;
+    font-family: Acumin_Regular, Helvetica, Arial, Sans-serif;
+}
+
+option {
+    color: #34425c;
+}
+
+a {
+    -webkit-transition: all .15s cubic-bezier(.645, .045, .355, 1);
+    transition: all .15s cubic-bezier(.645, .045, .355, 1);
+    text-decoration: none;
+}
+
+a {
+    color: #3e49fb;
+}
+
+a:visited {
+    color: #3e49fb;
+}
+
+a:hover {
+    color: #7078fc;
+}
+
+a.link {
+    color: #3e49fb;
+    text-decoration: underline;
+}
+
+a.link.weak {
+    color: #b5b3b3;
+}
+
+a.link.weak:hover {
+    color: #b5b3b3;
+}
+
+input::-webkit-input-placeholder {
+    color: #A7ABC3;
+}
+
+input:-ms-input-placeholder {
+    color: #A7ABC3;
+}
+
+input:-moz-placeholder {
+    color: #A7ABC3;
+}
+
+input::-moz-placeholder {
+    color: #A7ABC3;
+}
+
+input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"]>input[type="button"]::-moz-focus-inner {
+    border: none;
+    padding: 0;
+}
+
+img {
+    border: 0px;
+    padding: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+.button, .button-bordered, .button-font-colored {
+    display: inline-block;
+    height: 32px;
+    line-height: 30px;
+    border-radius: 6px;
+    font-size: 13px;
+    text-transform: capitalize;
+    vertical-align: middle;
+    padding: 0 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: acumin_semibold, Helvetica, Arial, Sans-serif;
+    margin-right: 2px;
+    *margin-right: 4px;
+    box-sizing: border-box;
+    -webkit-transition: all .15s cubic-bezier(.645, .045, .355, 1);
+    transition: all .15s cubic-bezier(.645, .045, .355, 1);
+}
+
+.button.sm, .button-bordered.sm {
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 0 6px;
+}
+
+.button {
+    color: #fff;
+    background-color: #3e49fb;
+    border: 0;
+}
+
+.button:hover, .button:focus {
+    background-color: #7078fc;
+}
+
+.button:active {
+    background-color: #3e49fb;
+}
+
+.button-bordered {
+    color: #7A7C93;
+    background-color: #fff;
+    border: 1px solid #DDE0E5;
+}
+
+.button-bordered:hover, .button-bordered:focus {
+    background: #f3f6fd;
+}
+
+.button-bordered:active {
+    background: #f3f6fd;
+}
+
+.button[disabled], .button-bordered[disabled], button[disabled], input[type=button][disabled] {
+    background-color: #dadada;
+    cursor: not-allowed;
+}
+
+.button .arrow {
+    font-size: 18px;
+    vertical-align: 1px;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+.button .text {
+    display: inline-block;
+    vertical-align: 2px;
+}
+
+.button .iconfont {
+    color: #fff;
+}
+
+.button-bordered .iconfont {
+    color: #7A7C93;
+}
+
+.button .iconfont, .button-bordered .iconfont {
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.button.sm .iconfont, .button-bordered.sm .iconfont {
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+.button:focus, .button-bordered:focus {
+    outline: none;
+}

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Acumin_Bold";
+  src: url("acumin-bold.eot") format("eot"),
+    url('acumin-bold.ttf') format('truetype'),
+    url("acumin-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin_Light";
+  src: url("acumin-light.eot") format("eot"),
+  url('acumin-light.ttf') format('truetype'),
+    url("acumin-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin_Medium";
+  src: url("acumin-medium.eot") format("eot"),
+  url('acumin-medium.ttf') format('truetype'),
+    url("acumin-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin_Regular";
+  src: url("acumin-regular.eot") format("eot"),
+  url('acumin-regular.ttf') format('truetype'),
+    url("acumin-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin_SemiBold";
+  src: url("acumin-semibold.eot") format("eot"),
+  url('acumin-semibold.ttf') format('truetype'),
+    url("acumin-semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin_ExtraLight";
+  src: url("acumin-extra-light.eot") format("eot"),
+  url('acumin-extra-light.ttf') format('truetype'),
+    url("acumin-extra-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin_Thin";
+  src: url("acumin-thin.eot") format("eot"),
+  url('acumin-thin.ttf') format('truetype'),
+    url("acumin-thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin_Black";
+  src: url("acumin-black.eot") format("eot"),
+    url('acumin-black.ttf') format('truetype'),
+    url("acumin-black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script src="jquery.js"></script>
+    <script src="prism.js"></script>
+</head>
+<style>
+    .es-card-body
+    {
+        padding: 25px;
+    }
+    .es-card-body h2:first-child
+    {
+        margin-top: 0;
+    }
+</style>
+<body>
+    <div class="es-header">
+        <div class="es-header-title">Playground</div>
+    </div>
+    <div style="margin: 20px auto;width: 960px;padding: 0 20px;">
+        <div class="es-card">
+            <div class="es-card-header">
+                Tab
+            </div>
+            <div class="es-card-body">
+                <div class="tab" id="testTab1">
+                    <div class="tab-header">
+                        <div class="tab-nav">
+                            <div class="tab-nav-item active min-width1">
+                                Tab1
+                            </div>
+                            <div class="tab-nav-item">
+                                Tab2
+                            </div>
+                            <div class="right-container"><a href="javascript:;">button</a></div>
+                        </div>
+                        <div class="tab-flag"></div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-content-pane">
+                            Tab1 content
+                        </div>
+                        <div class="tab-content-pane">
+                            Tab2 content
+                        </div>
+                    </div>
+                </div>
+                <div>Nested</div>
+                <div class="tab" id="testTab2">
+                    <div class="tab-header">
+                        <div class="tab-nav">
+                            <div class="tab-nav-item active min-width1">
+                                Tab1
+                            </div>
+                            <div class="tab-nav-item">
+                                Tab2
+                            </div>
+                            <div class="right-container"><a href="javascript:;">button</a></div>
+                        </div>
+                        <div class="tab-flag"></div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-content-pane">
+                            Tab1 content
+                            <div class="tab" id="testTab3">
+                                <div class="tab-header">
+                                    <div class="tab-nav">
+                                        <div class="tab-nav-item active min-width1">
+                                            Nested Tab1
+                                        </div>
+                                        <div class="tab-nav-item min-width1">
+                                            Nested Tab2
+                                        </div>
+                                        <!-- <div class="right-container"><a href="javascript:;">button</a></div> -->
+                                    </div>
+                                    <div class="tab-flag"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-content-pane">
+                                        Nested Tab1 content
+                                    </div>
+                                    <div class="tab-content-pane">
+                                        Nested Tab2 content
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-pane">
+                            Tab2 content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="es-card">
+            <div class="es-card-header">Checkbox</div>
+            <div class="es-card-body">
+                <h2>Initialize:</h2>
+                <input type="checkbox" class="es-checkbox" id="testCheckbox1">
+                <input type="checkbox" checked class="es-checkbox" id="testCheckbox2">
+                <input type="checkbox" disabled class="es-checkbox" id="testCheckbox3">
+                <input type="checkbox" disabled checked class="es-checkbox" id="testCheckbox4">
+                <h2>API:</h2>
+                <input type="checkbox" class="es-checkbox" id="testCheckbox5">
+                <div style="margin-top: 20px;">
+                    <button id="testCheckboxButton1" class="button sm">Check</button>
+                    <button id="testCheckboxButton2" class="button sm">Uncheck</button>
+                    <button id="testCheckboxButton3" class="button sm">Enable</button>
+                    <button id="testCheckboxButton4" class="button sm">Disable</button>
+                </div>
+                <pre>
+                    <code class="language-css" id="testCheckboxCode"></code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="es-card">
+            <div class="es-card-header">Dropdown select</div>
+            <div class="es-card-body">
+                <select name="" id="orgSelector">
+                    <option value="1">Neulion</option>
+                    <option value="2">Neusports</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="es-card">
+            <div class="es-card-header">Tooltip2</div>
+            <div class="es-card-body">
+                <div title="Tool tip">Tooltip</div>
+            </div>
+        </div>
+
+        <div class="es-card">
+            <div class="es-card-header">Alert</div>
+            <div class="es-card-body">
+                <button id="alert" class="button">Click to alert</button>
+                <pre>
+                    <code class="language-css" id="testAlertCode"></code>
+                </pre>
+            </div>
+        </div>
+
+
+        <div class="es-card">
+            <div class="es-card-header">Confirm</div>
+            <div class="es-card-body">
+                <button id="confirm" class="button">Click to confirm</button>
+                <h2>Confirm group</h2>
+                <button id="confirmGroup" class="button">Click to show confirm group</button>
+                <pre>
+                    <code class="language-css" id="testConfirmCode"></code>
+                </pre>
+            </div>
+        </div>
+
+        <!-- <div class="es-card">
+            <div class="es-card-header">Btns group</div>
+            <div class="es-card-body">
+                <div class="es-btns-group" id="testBtnGroup">
+                    <div class="es-btns-group-btns">
+                        <button type="button" class="button es-btns-group-btn"> Default button </button>
+                        <button type="button" class="button es-btns-group-btn"> Dropdown button1 </button>
+                        <button type="button" class="button es-btns-group-btn"> Dropdown button2 </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="es-card">
+            <div class="es-card-header">Modal</div>
+            <div class="es-card-body">
+                <button id="showModal" class="button">Click to show modal</button>
+            </div>
+        </div>
+
+
+        <div class="es-card">
+            <div class="es-card-header">Column Configurator</div>
+            <div class="es-card-body">
+                <div id="columnContainer"></div>
+            </div>
+        </div>
+
+        <div class="es-card">
+            <div class="es-card-header">Limited Viewer</div>
+            <div class="es-card-body">
+                <h2>Init($obj)</h2>
+                <div id="testLiminitedViewer1" data-show-height="40" style="width:300px">
+                    Google LLC is an American multinational technology company that specializes in Internet-related
+                    services and
+                    products, which include online advertising technologies, search engine, cloud computing, software,
+                    and
+                    hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and
+                    Facebook.
+                </div>
+
+                <h2>Unfold($obj)</h2>
+                <div id="testLiminitedViewer2" data-show-height="40" style="width:300px">
+                    Google LLC is an American multinational technology company that specializes in Internet-related
+                    services and
+                    products, which include online advertising technologies, search engine, cloud computing, software,
+                    and
+                    hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and
+                    Facebook.
+                </div>
+                <button class="button" id="Button_testLiminitedViewer2">Unfold</button>
+
+                <h2>Fold($obj)</h2>
+                <div id="testLiminitedViewer3" data-show-height="40" style="width:300px">
+                    Google LLC is an American multinational technology company that specializes in Internet-related
+                    services and
+                    products, which include online advertising technologies, search engine, cloud computing, software,
+                    and
+                    hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and
+                    Facebook.
+                </div>
+                <button class="button" id="Button_testLiminitedViewer3">Fold</button>
+            </div>
+        </div>
+
+        <!-- <div class="es-card">
+            <div class="es-card-header">Search input</div>
+            <div class="es-card-body">
+                <input type="text" class="search-input">
+            </div>
+        </div> -->
+        
+        <!-- <div class="es-card">
+            <div class="es-card-header">Global search</div>
+            <div class="es-card-body">
+                <div id="gs"></div>
+            </div>
+        </div> -->
+
+        <div class="es-card">
+            <div class="es-card-header">Search Loading</div>
+            <div class="es-card-body">
+                <div id="testSearchLoading"></div>
+            </div>
+        </div>
+        
+        <div class="es-card">
+            <div class="es-card-header">Percentage Bar</div>
+            <div class="es-card-body">
+                <div id="processCpuUsage"></div>
+            </div>
+        </div>
+        
+        <!-- <div class="es-card">
+            <div class="es-card-header">Content Selector Input</div>
+            <div class="es-card-body">
+                <input type="text" id="testContentSelectorInput">
+            </div>
+        </div> -->
+
+        <div class="es-card">
+            <div class="es-card-header">Content Editor</div>
+            <div class="es-card-body">
+                <div id="testContentEditor" style="width: 400px;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

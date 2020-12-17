@@ -1,0 +1,55 @@
+{
+  "name": "newui",
+  "version": "1.0.0",
+  "description": "IMS UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx webpack --config webpack.test.config.js --no-inline && ts-node testcli",
+    "start": "npx webpack-dev-server --config webpack.dev.config.js --no-inline --open",
+    "bcc": "npx webpack --config webpack.build.config.js && ts-node handlefont && ts-node copyfile && ts-node clear",
+    "build": "npx webpack --config webpack.build.config.js && ts-node handlefont",
+    "doc": "npx cross-env NODE_ENV=remote npx ts-node docscli",
+    "doc_l": "npx cross-env NODE_ENV=local npx ts-node docscli"
+  },
+  "author": "payne.xu",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.13",
+    "@types/http-server": "^0.10.1",
+    "@types/jquery": "^3.5.1",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.11.11",
+    "@types/selenium-webdriver": "^4.0.9",
+    "chai": "^4.2.0",
+    "chromedriver": "^86.0.0",
+    "colors": "^1.4.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^3.6.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^4.5.0",
+    "http-server": "^0.12.3",
+    "mocha": "^8.1.3",
+    "mochawesome": "^6.1.1",
+    "prismjs": "^1.22.0",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.4",
+    "ts-node": "^9.0.0",
+    "typedoc": "^0.19.2",
+    "typedoc-plugin-sourcefile-url": "^1.0.6",
+    "typescript": "^4.0.3",
+    "uglifycss": "0.0.29",
+    "url-loader": "^4.1.0",
+    "validator": "^13.1.17",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "bin": {
+    "newui": "bin/newui"
+  }
+}

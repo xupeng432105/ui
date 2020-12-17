@@ -1,0 +1,50 @@
+#!/usr/bin/env node
+var commander = require("commander");
+var exec = require("child_process").exec;
+var packageJSON = require('../package.json');
+
+commander
+	.version(`v${packageJSON.version}`, '-v, --version');
+
+commander
+    .command('watch')
+    .alias("w")
+    .description("Watch file change and build")
+    .action(function(){
+        exec("node watchfile")
+    })
+
+commander
+    .command('start')
+    .alias("s")
+    .description("start")
+    .action(function(){
+        exec(`${packageJSON.scripts.start}`)
+    })
+
+
+commander
+    .command('build')
+    .alias("b")
+    .description("build")
+    .action(function(){
+        exec(`${packageJSON.scripts.build}`)
+    })
+
+commander
+    .command('buildcopyclear')
+    .alias("bcc")
+    .description(`${packageJSON.scripts.bcc}`)
+    .action(function(){
+        exec("npm run bcc")
+    })
+
+commander
+    .command('test')
+    .alias("t")
+    .description("test")
+    .action(function(){
+        exec(`${packageJSON.scripts.test}`)
+    })
+
+commander.parse(process.argv)

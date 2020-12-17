@@ -1,0 +1,9 @@
+{
+    "compilerOptions":{
+        "outDir": "dist_test",
+        "target": "es2016",
+        "sourceMap": true,
+        "declaration": true,
+        "declarationDir": "dist_test"
+    }
+}

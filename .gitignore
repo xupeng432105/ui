@@ -1,0 +1,5 @@
+/test/mochawesome-report
+debug.log
+/dist
+/dist_test
+/docs
