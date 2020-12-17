@@ -2,8 +2,9 @@
 2.Run `npm start` to enter dev mode, it will watch the local files and open a browser window for you
     or Run `npm run build` to build a `dist` folder
     or Run `npm run bcc` to build and copy the js/css bundles to target folders and delete the `dist` folder
-	or Run `npm run doc` to generate docs
-	or Run `npm run doc_l` to generate docs and open in browser
+    or Run `npm run doc` to generate docs
+    or Run `npm run doc_l` to generate docs and open in browser
+    or Run `npm run test` to do test
 
 NOTE: if 'chromedriver' is installed failed, please try more times.
 
